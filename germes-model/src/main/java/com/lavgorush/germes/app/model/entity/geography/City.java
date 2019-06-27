@@ -1,6 +1,7 @@
 package com.lavgorush.germes.app.model.entity.geography;
 
 import com.lavgorush.germes.app.model.entity.base.AbstractEntity;
+import com.lavgorush.germes.app.model.entity.transport.TransportType;
 
 import java.util.*;
 
@@ -25,6 +26,10 @@ public class City extends AbstractEntity {
      * loyality
      */
     private Set<Station> stations;
+
+    public City(final String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
@@ -58,15 +63,23 @@ public class City extends AbstractEntity {
         this.stations = stations;
     }
 
-    public void addStation(Station station) {
-        Objects.requireNonNull(station, "station parameter is not initialized");
+    /**
+     * Add specified station to the city station list
+     * @param transportType
+     * @return
+     */
+    public Station addStation(final TransportType transportType) {
         if (stations == null) {
             stations = new HashSet<>();
         }
+        Station station = new Station(this, transportType);
         stations.add(station);
-        station.setCity(this);
+        return station;
     }
-
+    /**
+     * Remove specified station from city station list
+     * @param station
+     */
     public void removeStation(Station station) {
         Objects.requireNonNull(station, "station parameter is not initialized");
         if (stations == null) {
