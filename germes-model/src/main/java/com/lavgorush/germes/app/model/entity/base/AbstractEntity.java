@@ -1,6 +1,6 @@
-package com.lavgorush.germes.app.madel.entity.base;
+package com.lavgorush.germes.app.model.entity.base;
 
-import com.lavgorush.germes.app.madel.entity.person.Account;
+import com.lavgorush.germes.app.model.entity.person.Account;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

@@ -1,9 +1,8 @@
-package com.lavgorush.germes.app.madel.entity.geography;
+package com.lavgorush.germes.app.model.entity.geography;
 
-import com.lavgorush.germes.app.madel.entity.base.AbstractEntity;
+import com.lavgorush.germes.app.model.entity.base.AbstractEntity;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Any location that contains transport stations
@@ -52,7 +51,7 @@ public class City extends AbstractEntity {
     }
 
     public Set<Station> getStations() {
-        return stations;
+        return Collections.unmodifiableSet(Optional.ofNullable(stations).orElse(Collections.emptySet()));
     }
 
     public void setStations(Set<Station> stations) {
@@ -60,10 +59,19 @@ public class City extends AbstractEntity {
     }
 
     public void addStation(Station station) {
+        Objects.requireNonNull(station, "station parameter is not initialized");
         if (stations == null) {
             stations = new HashSet<>();
         }
         stations.add(station);
         station.setCity(this);
+    }
+
+    public void removeStation(Station station) {
+        Objects.requireNonNull(station, "station parameter is not initialized");
+        if (stations == null) {
+            return;
+        }
+        stations.remove(station);
     }
 }

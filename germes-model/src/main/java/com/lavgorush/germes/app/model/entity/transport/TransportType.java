@@ -1,4 +1,4 @@
-package com.lavgorush.germes.app.madel.entity.transport;
+package com.lavgorush.germes.app.model.entity.transport;
 
 /**
  * Type of the station/transport/vehicle

@@ -1,6 +1,6 @@
-package com.lavgorush.germes.app.madel.entity.person;
+package com.lavgorush.germes.app.model.entity.person;
 
-import com.lavgorush.germes.app.madel.entity.base.AbstractEntity;
+import com.lavgorush.germes.app.model.entity.base.AbstractEntity;
 
 /**
  * Entity that encapsulate user of the application

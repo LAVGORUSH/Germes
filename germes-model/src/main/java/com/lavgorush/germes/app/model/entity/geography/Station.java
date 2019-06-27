@@ -1,7 +1,7 @@
-package com.lavgorush.germes.app.madel.entity.geography;
+package com.lavgorush.germes.app.model.entity.geography;
 
-import com.lavgorush.germes.app.madel.entity.base.AbstractEntity;
-import com.lavgorush.germes.app.madel.entity.transport.TransportType;
+import com.lavgorush.germes.app.model.entity.base.AbstractEntity;
+import com.lavgorush.germes.app.model.entity.transport.TransportType;
 
 /**
  * Station where passengers can get off or take specific kind

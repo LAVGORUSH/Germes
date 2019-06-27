@@ -1,4 +1,4 @@
-package com.lavgorush.germes.app.madel.entity.geography;
+package com.lavgorush.germes.app.model.entity.geography;
 
 /**
  * Geographical coordinate of an object
