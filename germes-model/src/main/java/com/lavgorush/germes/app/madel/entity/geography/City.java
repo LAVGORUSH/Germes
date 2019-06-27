@@ -2,6 +2,7 @@ package com.lavgorush.germes.app.madel.entity.geography;
 
 import com.lavgorush.germes.app.madel.entity.base.AbstractEntity;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -56,5 +57,13 @@ public class City extends AbstractEntity {
 
     public void setStations(Set<Station> stations) {
         this.stations = stations;
+    }
+
+    public void addStation(Station station) {
+        if (stations == null) {
+            stations = new HashSet<>();
+        }
+        stations.add(station);
+        station.setCity(this);
     }
 }
