@@ -5,7 +5,7 @@
     <parent>
         <artifactId>Germes</artifactId>
         <groupId>com.lavgorush</groupId>
-        <version>0.0.6</version>
+        <version>0.0.8</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -22,6 +22,21 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <path>/</path>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.lavgorush</groupId>
+            <artifactId>germes-service</artifactId>
+            <version>0.0.8</version>
+        </dependency>
+    </dependencies>
 </project>

@@ -6,7 +6,7 @@
 
     <groupId>com.lavgorush</groupId>
     <artifactId>Germes</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.8</version>
 
     <packaging>pom</packaging>
     <modules>
