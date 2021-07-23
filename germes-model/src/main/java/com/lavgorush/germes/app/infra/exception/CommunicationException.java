@@ -1,6 +1,6 @@
-package com.lavgorush.germes.app.ifra.exception;
+package com.lavgorush.germes.app.infra.exception;
 
-import com.lavgorush.germes.app.ifra.exception.base.AppException;
+import com.lavgorush.germes.app.infra.exception.base.AppException;
 
 /**
  * Signals about exception cases in the work of services and API

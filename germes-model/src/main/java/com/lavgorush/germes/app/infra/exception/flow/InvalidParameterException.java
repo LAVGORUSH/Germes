@@ -1,6 +1,6 @@
-package com.lavgorush.germes.app.ifra.exception.flow;
+package com.lavgorush.germes.app.infra.exception.flow;
 
-import com.lavgorush.germes.app.ifra.exception.FlowException;
+import com.lavgorush.germes.app.infra.exception.FlowException;
 
 /**
  * Signals that incorrect parameter was passed to method/constructor

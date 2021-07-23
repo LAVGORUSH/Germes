@@ -1,6 +1,6 @@
 package com.lavgorush.germes.app.service.impl;
 
-import com.lavgorush.germes.app.ifra.util.CommonUtil;
+import com.lavgorush.germes.app.infra.util.CommonUtil;
 import com.lavgorush.germes.app.model.entity.geography.City;
 import com.lavgorush.germes.app.service.GeographicService;
 

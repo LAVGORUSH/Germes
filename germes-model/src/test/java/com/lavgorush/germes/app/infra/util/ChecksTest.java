@@ -1,7 +1,6 @@
 package com.lavgorush.germes.app.infra.util;
 
-import com.lavgorush.germes.app.ifra.exception.flow.InvalidParameterException;
-import com.lavgorush.germes.app.ifra.util.Checks;
+import com.lavgorush.germes.app.infra.exception.flow.InvalidParameterException;
 import org.junit.Test;
 
 import static junit.framework.TestCase.*;

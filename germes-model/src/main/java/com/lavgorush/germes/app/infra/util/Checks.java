@@ -1,6 +1,6 @@
-package com.lavgorush.germes.app.ifra.util;
+package com.lavgorush.germes.app.infra.util;
 
-import com.lavgorush.germes.app.ifra.exception.flow.InvalidParameterException;
+import com.lavgorush.germes.app.infra.exception.flow.InvalidParameterException;
 
 public class Checks {
     private Checks() {

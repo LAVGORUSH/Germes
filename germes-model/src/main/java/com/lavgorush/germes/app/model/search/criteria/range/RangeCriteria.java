@@ -1,6 +1,6 @@
 package com.lavgorush.germes.app.model.search.criteria.range;
 
-import com.lavgorush.germes.app.ifra.util.Checks;
+import com.lavgorush.germes.app.infra.util.Checks;
 
 /**
  * Pagination parameters for data retrieval operations
