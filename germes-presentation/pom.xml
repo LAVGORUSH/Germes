@@ -5,7 +5,7 @@
     <parent>
         <artifactId>Germes</artifactId>
         <groupId>com.lavgorush</groupId>
-        <version>0.1.3</version>
+        <version>0.1.4</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>com.lavgorush</groupId>
             <artifactId>germes-service</artifactId>
-            <version>0.1.3</version>
+            <version>0.1.4</version>
         </dependency>
     </dependencies>
 </project>

@@ -1,6 +1,7 @@
 package com.lavgorush.germes.app.service.transform.impl;
 
 import com.lavgorush.germes.app.infra.util.Checks;
+import com.lavgorush.germes.app.infra.util.CommonUtil;
 import com.lavgorush.germes.app.infra.util.ReflectionUtil;
 import com.lavgorush.germes.app.model.entity.base.AbstractEntity;
 import com.lavgorush.germes.app.rest.dto.base.BaseDTO;
@@ -51,7 +52,7 @@ public class SimpleDTOTransformer implements Transformer {
 
 		if (log.isDebugEnabled()) {
 			log.debug("SimpleDTOTransformer.unTransform: {} entity object",
-				ReflectionToStringBuilder.toString(entity, ToStringStyle.SHORT_PREFIX_STYLE));
+				CommonUtil.toString(entity));
 		}
 
 		return entity;
