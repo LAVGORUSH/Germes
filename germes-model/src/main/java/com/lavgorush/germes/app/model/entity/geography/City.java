@@ -1,5 +1,6 @@
 package com.lavgorush.germes.app.model.entity.geography;
 
+import com.lavgorush.germes.app.infra.util.CommonUtil;
 import com.lavgorush.germes.app.model.entity.base.AbstractEntity;
 import com.lavgorush.germes.app.model.entity.transport.TransportType;
 
@@ -56,7 +57,7 @@ public class City extends AbstractEntity {
     }
 
     public Set<Station> getStations() {
-        return Collections.unmodifiableSet(Optional.ofNullable(stations).orElse(Collections.emptySet()));
+        return  CommonUtil.getSafeSet(stations);
     }
 
     public void setStations(Set<Station> stations) {
