@@ -3,7 +3,9 @@ package com.lavgorush.germes.app.model.entity.geography;
 import com.lavgorush.germes.app.model.entity.base.AbstractEntity;
 import com.lavgorush.germes.app.model.entity.transport.TransportType;
 
+import com.lavgorush.germes.app.model.search.criteria.StationCriteria;
 import java.util.Objects;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Station where passengers can get off or take specific kind
@@ -66,6 +68,29 @@ public class Station extends AbstractEntity {
 
     public TransportType getTransportType() {
         return transportType;
+    }
+
+    /**
+     * Verifies if current station matches specified criteria
+     * @param criteria
+     * @return
+     */
+    public boolean match(final StationCriteria criteria) {
+        Objects.requireNonNull(criteria, "Station criteria is not initialized");
+
+        if(!StringUtils.isEmpty(criteria.getName())) {
+            if(!city.getName().equals(criteria.getName())) {
+                return false;
+            }
+        }
+
+        if(criteria.getTransportType() != null) {
+            if(transportType != criteria.getTransportType()) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     @Override
